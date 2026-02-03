@@ -11,7 +11,10 @@ const Count = () => {
   }
 
   const increase = () => {
-    setNumber(number + 1)
+    setNumber((prev) => {
+      console.log("이전 값", prev)
+      return number + 1
+    })
   }
 
   return (

@@ -1,9 +1,9 @@
-import CheckboxContainer from "./map/expert/CheckboxContainer";
+import AnimalsContainer from "./context/expert/AnimalsContainer";
 
 function App() {
   return (
     <> 
-      <CheckboxContainer />
+      <AnimalsContainer />
     </>
   );
 }
