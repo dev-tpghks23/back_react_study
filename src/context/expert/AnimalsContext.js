@@ -15,8 +15,8 @@ export const AnimalsProvider = ({children}) => {
       animals
     },
     actions: {
-      insert: () => {},
-      remove: () => {}
+      insert: (animal) => {setAnimals(animals.concat(animal))},
+      remove: (i) => { setAnimals(animals.filter((_, idx) => i !== idx)) }
     }
   }
 
